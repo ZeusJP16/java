@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-class IntArrayInit	{
+public class Es6_5	{
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 
@@ -27,13 +27,13 @@ class IntArrayInit	{
 			System.out.println("}");
 	}
 }
-
 /*
-VuVietAnhQS:java vuvietanhqc$ javac es6-5.java
-VuVietAnhQS:java vuvietanhqc$ java IntArrayInit
+VuVietAnhQS:Java vuvietanhqc$ javac Es6_5.java
+VuVietAnhQS:Java vuvietanhqc$ java Es6_5
 要素数：3
 a[0] = 5
 a[1] = 7
 a[2] = 8
 a = {5, 7, 8}
 */
+

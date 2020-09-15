@@ -1,6 +1,8 @@
-//名前：ヴー　グエン　ヴィエット　アン
+/*
+名前：ヴー　グエン　ヴィエット　アン
 ２MI
 提出日: 2020/9/15
+*/
 
 import java.util.Scanner;
 
@@ -25,3 +27,13 @@ class IntArrayInit	{
 			System.out.println("}");
 	}
 }
+
+/*
+VuVietAnhQS:java vuvietanhqc$ javac es6-5.java
+VuVietAnhQS:java vuvietanhqc$ java IntArrayInit
+要素数：3
+a[0] = 5
+a[1] = 7
+a[2] = 8
+a = {5, 7, 8}
+*/

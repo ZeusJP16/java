@@ -45,15 +45,15 @@ public class Es81	{
 
 
 /*実行結果：
-VuVietAnhQS:java vuvietanhqc$ javac Es81.java
+名前は：^[[A^CVuVietAnhQS:java vuvietanhqc$ javac Es81.java
 VuVietAnhQS:java vuvietanhqc$ java Es81
 名前・身長・体重を順番で入力せよ。
 名前は：Anh
 身長は：165
 体重は：55
 名前：Anh
-身長：55cm
-体重：165kg
+身長：165cm
+体重：55kg
 
 終わりですか？[0･･･Yes/1･･･No] : 
 */

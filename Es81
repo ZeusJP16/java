@@ -1,0 +1,59 @@
+/* 名前：　ヴー　グエン　ヴィエット　アン
+　　クラス：　２MI
+　　提出日：　2020/11/10
+*/
+
+import java.util.Scanner;
+class  Person {
+	private String name;
+	private int height;
+	private int weight;
+
+	Person(String name, int weight, int height)	{
+		this.name = name;	this.height = height;	this.weight = weight;
+	}
+
+	void putSpec()	{
+		System.out.println("名前：" + name);
+		System.out.println("身長：" + height + "cm");
+		System.out.println("体重：" + weight + "kg");
+	}
+}
+
+public class Es81	{
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("名前・身長・体重を順番で入力せよ。");
+
+		while (true)	{
+			System.out.print("名前は：");			String name = stdIn.next();
+			System.out.print("身長は：");			int height = stdIn.nextInt();
+			System.out.print("体重は：");			int weight = stdIn.nextInt();
+
+			Person person = new Person(name, height, weight);
+
+			person.putSpec();
+			System.out.println();
+
+			System.out.print("終わりですか？[0･･･Yes/1･･･No] : ");
+			if (stdIn.nextInt() == 0) break;
+		}
+
+	}
+}
+
+
+/*実行結果：
+VuVietAnhQS:java vuvietanhqc$ javac Es81.java
+VuVietAnhQS:java vuvietanhqc$ java Es81
+名前・身長・体重を順番で入力せよ。
+名前は：Anh
+身長は：165
+体重は：55
+名前：Anh
+身長：55cm
+体重：165kg
+
+終わりですか？[0･･･Yes/1･･･No] : 
+*/

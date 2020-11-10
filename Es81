@@ -27,9 +27,9 @@ public class Es81	{
 		System.out.println("名前・身長・体重を順番で入力せよ。");
 
 		while (true)	{
-			System.out.print("名前は：");			String name = stdIn.next();
-			System.out.print("身長は：");			int height = stdIn.nextInt();
-			System.out.print("体重は：");			int weight = stdIn.nextInt();
+			System.out.print("名前は：");	String name = stdIn.next();
+			System.out.print("身長は：");	int height = stdIn.nextInt();
+			System.out.print("体重は：");	int weight = stdIn.nextInt();
 
 			Person person = new Person(name, height, weight);
 

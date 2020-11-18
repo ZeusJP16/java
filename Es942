@@ -1,0 +1,85 @@
+/* 名前: ヴー グエン　ヴィエット　アン
+　　クラス: 2MI
+	提出日：2020/11/18
+*/
+import java.util.Scanner;
+class  Person {
+	private String name;
+	private int height;
+	private int weight;
+	private Day birthday;
+
+	Person(String name, int height, int weight, Day birthday)	{
+		this.name = name;	this.height = height;	this.weight = weight;
+		this.birthday = new Day(birthday);
+	}
+
+	public String toString()	{
+		return String.format("名前: %s\n身長: %d\n体重: %d\n生年月日: %s\n",
+								name, height, weight, birthday);
+	}
+
+	void putSpec()	{
+		System.out.println("名前：" + name);
+		System.out.println("身長：" + height + "cm");
+		System.out.println("体重：" + weight + "kg");
+	}
+}
+
+public class Es94_2	{
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("名前・身長・体重を順番で入力せよ。");
+		System.out.println("人数を入力してください。");
+		int n = stdIn.nextInt();
+
+		while (true)	{
+			Person[] human = new Person[n];
+			for (int i = 0; i < human.length; i++) {
+				System.out.print("名前" + (i + 1) + ": ");		String name = stdIn.next();
+				System.out.print("身長" + (i + 1) + ": ");		int height = stdIn.nextInt();
+				System.out.print("体重" + (i + 1) + ": ");		int weight = stdIn.nextInt();
+				System.out.println("生年月日" + (i + 1) + "を入力せよ。");
+				int y, m, d;
+				System.out.print("年: "); y = stdIn.nextInt();
+				System.out.print("月: "); m = stdIn.nextInt();
+				System.out.print("日: "); d = stdIn.nextInt();		
+				
+				Day birthday = new Day(y, m, d);
+				
+				human[i] = new Person(name, height, weight, birthday);
+				System.out.println();
+			
+
+				System.out.println("--------------------");
+				System.out.println(human[i].toString());
+			}
+			System.out.print("終わりですか？[0･･･Yes/1･･･No] : ");
+			if (stdIn.nextInt() == 0) break;
+		}
+	}
+}
+
+/*
+VuVietAnhQS:java vuvietanhqc$ javac Es94.java
+VuVietAnhQS:java vuvietanhqc$ java Es94
+名前・身長・体重を順番で入力せよ。
+人数を入力してください。
+1
+名前1: Anh
+身長1: 166
+体重1: 55
+生年月日1を入力せよ。
+年: 1997
+月: 4
+日: 15
+
+--------------------
+名前: Anh
+身長: 166
+体重: 55
+生年月日: 1997年04月15日(火)
+
+終わりですか？[0･･･Yes/1･･･No] : 
+*/
